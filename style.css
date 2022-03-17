@@ -38,6 +38,7 @@ nav .container {
     padding: 20px;
     height: 100vh;
   }
+
   nav .container {
     background-color: #3e3c3c;
     display: flex;
@@ -62,6 +63,7 @@ nav .container {
     flex-grow: 0;
     margin: 12px 0px;
   }
+
   .paragragh p {
     font-family: 'Poppins';
     font-style: normal;
