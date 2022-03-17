@@ -8,7 +8,7 @@
   display: none;
 }
 
-nav .container {
+.container {
   background-color: #3e3c3c;
   display: flex;
   height: 72px;
@@ -34,9 +34,17 @@ nav .container {
     background-color: #1c1a19;
     padding: 20px;
     height: 100vh;
+    background-image: url(./image/bg-img.png);
+    background-repeat: no-repeat;
+    background-position: 100% 90%;
   }
 
-  nav .container {
+  nav {
+    width: 100%;
+    padding: 0;
+  }
+
+  .container {
     background-color: #3e3c3c;
     display: flex;
     height: 90px;
@@ -45,43 +53,12 @@ nav .container {
     align-items: center;
   }
 
-  .bio-container h1 {
+  .container .name-info {
     display: flex;
-    color: #ff6b00;
     flex-wrap: wrap;
     font-style: normal;
-    font-weight: 400;
-    font-size: 56px;
-    line-height: 64px;
-    letter-spacing: 0.37px;
-    order: 0;
-    flex-grow: 0;
-    margin: 12px 0;
-  }
-
-  .paragragh p {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #fff;
-    margin: 12px 0;
-  }
-
-  .bio-container h3 {
-    color: #fff5e1;
-    font-style: normal;
     font-weight: 700;
-    font-size: 24px;
-    line-height: 32px;
-    display: flex;
-    align-items: center;
-    margin: 12px 0;
-  }
-
-  .container .name-info {
-    font-style: normal;
-    font-weight: 700;
+    text-decoration: none;
     font-size: 18px;
     line-height: 24px;
     color: #fff;
@@ -97,10 +74,46 @@ nav .container {
     display: none;
   }
 
-  .bio-container {
+.bio-container {
     display: flex;
+    padding-top: 15vh;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
+  }
+
+  .bio-container h1 {
+    display: flex;
+    color: #ff6b00;
+    flex-wrap: wrap;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: 0.37px;
+    order: 0;
+    flex-grow: 0;
+    margin: 5px 0;
+  }
+
+  .paragragh p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    margin: 0;
+  }
+
+  .bio-container h3 {
+    color: #fff5e1;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    flex: 1;
+    align-items: center;
+    margin: 5px 0;
   }
 
   .icon {
