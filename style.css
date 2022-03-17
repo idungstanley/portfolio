@@ -12,8 +12,6 @@ nav .container {
   background-color: #3e3c3c;
   display: flex;
   height: 72px;
-  /* justify-content: space-between; */
-  /* width: 100%; */
 }
 
 .container .name-info {
@@ -32,7 +30,6 @@ nav .container {
 }
 
 @media screen and (max-width: 600px) {
-  
   main {
     background-color: #1c1a19;
     padding: 20px;
@@ -43,7 +40,6 @@ nav .container {
     background-color: #3e3c3c;
     display: flex;
     height: 90px;
-    /* width: 100%; */
     padding: 10px;
     align-content: center;
     align-items: center;
@@ -116,8 +112,6 @@ nav .container {
   }
 
   .icon img {
-    /* flex: 1; */
     padding: 10px;
-    /* flex-grow: 20px; */
   }
 }
