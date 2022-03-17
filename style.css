@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Mulish:wght@500&family=Poppins:wght@200&family=Roboto&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.container {
+  background-color: #3e3c3c;
+  display: flex;
+  height: 72px;
+}
+
+.container .name-info {
+  flex: 3;
+}
+
+.container ul {
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+}
+
+.list-container li {
+  list-style: none;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    background-color: #1c1a19;
+    padding: 20px;
+    height: 100vh;
+    background-image: url(./image/bg-img.png);
+    background-repeat: no-repeat;
+    background-position: 100% 90%;
+  }
+
+  nav {
+    width: 100%;
+    padding: 0;
+  }
+
+  .container {
+    background-color: #3e3c3c;
+    display: flex;
+    height: 90px;
+    padding: 10px;
+    align-content: center;
+    align-items: center;
+  }
+
+  .container .name-info {
+    display: flex;
+    flex-wrap: wrap;
+    font-style: normal;
+    font-weight: 700;
+    font-family:
+      'Roboto',
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      'Open Sans',
+      'Helvetica Neue',
+      sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+    flex: 10;
+  }
+
+  .menu-toggle {
+    display: block;
+    flex: 1;
+  }
+
+  .container ul {
+    display: none;
+  }
+
+  .bio-container {
+    display: flex;
+    padding-top: 15vh;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .bio-container h1 {
+    display: flex;
+    color: #ff6b00;
+    flex-wrap: wrap;
+    font-family: 'Crete Round', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: 0.37px;
+    order: 0;
+    flex-grow: 0;
+    margin: 5px 0;
+  }
+
+  .paragragh p {
+    font-style: normal;
+    font-family: 'Poppins', Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    margin: 0;
+  }
+
+  .bio-container h2 {
+    color: #fff5e1;
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    flex: 1;
+    align-items: center;
+    margin: 5px 0;
+  }
+
+  .icon {
+    display: flex;
+    list-style: none;
+  }
+
+  .icon img {
+    padding: 10px;
+  }
+}
