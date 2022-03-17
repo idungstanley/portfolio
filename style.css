@@ -118,6 +118,7 @@
 
   .icon {
     display: flex;
+    list-style: none;
   }
 
   .icon img {
