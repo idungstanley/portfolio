@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Mulish:wght@500&family=Poppins:wght@200&family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@300&family=Mulish:wght@500&family=Poppins:wght@200&family=Roboto&display=swap');
 * {
   padding: 0;
   margin: 0;
@@ -135,6 +134,7 @@
     justify-content: center;
     background: #e5e5e5;
     padding: 24px;
+    padding-bottom: 70px;
   }
 
   .title {
@@ -305,5 +305,65 @@
     letter-spacing: 0.03em;
     text-align: center;
     color: #ffff;
+  }
+
+  .about-me {
+    display: flex;
+    padding-top: 60px;
+    flex-direction: column;
+    background: #1c1a19;
+  }
+
+  .about-me-header h1 {
+    font-family: Crete Round;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 88px;
+    color: #ff6b00;
+    letter-spacing: 0.3700000047683716px;
+    text-align: left;
+  }
+
+  .post-about-me {
+    color: #f4f5f7;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .btn-about-me {
+    background: #ff6b00;
+    box-sizing: border-box;
+    border: none;
+    width: 160px;
+    padding: 5px;
+  }
+  .btn-about-me a {
+    text-decoration: none;
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #ffff;
+  }
+
+  .about {
+    background-image: url(./image/illustration-about-me-mobile.png);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 150px;
+    flex-wrap: wrap;
+  }
+  .about > * {
+    margin: 10px;
   }
 }
