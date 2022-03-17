@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+nav .container {
+  background-color: #3e3c3c;
+  display: flex;
+  height: 72px;
+  /* justify-content: space-between; */
+  /* width: 100%; */
+}
+
+.container .name-info {
+  flex: 3;
+}
+
+.container ul {
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+}
+
+.list-container li {
+  list-style: none;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  
+  main {
+    background-color: #1c1a19;
+    padding: 20px;
+    height: 100vh;
+  }
+  nav .container {
+    background-color: #3e3c3c;
+    display: flex;
+    height: 90px;
+    /* width: 100%; */
+    padding: 10px;
+    align-content: center;
+    align-items: center;
+  }
+
+  .bio-container h1 {
+    display: flex;
+    color: #ff6b00;
+    flex-wrap: wrap;
+    font-family: 'Crete Round';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: 0.37px;
+    order: 0;
+    flex-grow: 0;
+    margin: 12px 0px;
+  }
+  .paragragh p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    margin: 12px 0px;
+  }
+
+  .bio-container h3 {
+    color: #fff5e1;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    margin: 12px 0px;
+  }
+
+  .container .name-info {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+    flex: 10;
+  }
+
+  .menu-toggle {
+    display: block;
+    flex: 1;
+  }
+
+  .container ul {
+    display: none;
+  }
+
+  .bio-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .icon {
+    display: flex;
+  }
+
+  .icon img {
+    /* flex: 1; */
+    padding: 10px;
+    /* flex-grow: 20px; */
+  }
+}
