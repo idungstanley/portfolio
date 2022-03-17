@@ -74,7 +74,7 @@
     display: none;
   }
 
-.bio-container {
+  .bio-container {
     display: flex;
     padding-top: 15vh;
     flex-direction: column;
