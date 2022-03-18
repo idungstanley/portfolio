@@ -407,6 +407,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     text-align: center;
+    list-style: none;
   }
 
   .lang-list-item a {
@@ -458,6 +459,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     text-align: center;
+    list-style: none;
   }
 
   .frame-list-item a {
@@ -510,6 +512,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     text-align: center;
+    list-style: none;
   }
 
   .skills-list-item a {
@@ -523,11 +526,5 @@
     text-align: center;
     color: #ffff;
     margin: 5px 0;
-  }
-
-  .lang-container,
-  .skills-container,
-  .frame-container {
-    list-style: none;
   }
 }
