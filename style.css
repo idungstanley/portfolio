@@ -530,4 +530,7 @@
     color: #ffff;
     margin: 5px 0;
   }
+  .lang-container,.skills-container, .frame-container {
+    list-style: none;
+  }
 }
