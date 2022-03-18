@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@300&family=Mulish:wght@500&family=Poppins:wght@200&family=Roboto&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -50,8 +51,14 @@
     flex-wrap: wrap;
     font-style: normal;
     font-weight: 700;
-    font-family: 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans',
-      'Helvetica Neue', sans-serif;
+    font-family:
+      'Roboto',
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      'Open Sans',
+      'Helvetica Neue',
+      sans-serif;
     text-decoration: none;
     font-size: 18px;
     line-height: 24px;
@@ -70,12 +77,11 @@
 
   .bio-container {
     display: flex;
-    padding: 0 10px 30px 40px;
+    padding: 15vh 10px 30vh 40px;
     background-color: #1c1a19;
-    padding-top: 15vh;
     background-image: url(./image/bg-img.png);
     background-repeat: no-repeat;
-    background-position: 100% 90%;
+    background-position: 100% 100%;
     flex-direction: column;
     height: 100vh;
     justify-content: center;
@@ -92,19 +98,16 @@
     font-size: 56px;
     line-height: 64px;
     letter-spacing: 0.37px;
-    order: 0;
-    flex-grow: 0;
     margin: 5px 0;
   }
 
-  .paragragh p {
+  .paragragh {
     font-style: normal;
     font-family: 'Poppins', Georgia, 'Times New Roman', Times, serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: #fff;
-    margin: 0;
   }
 
   .bio-container h2 {
@@ -114,7 +117,6 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 32px;
-    flex: 1;
     align-items: center;
     margin: 5px 0;
   }
@@ -142,13 +144,14 @@
     flex-wrap: wrap;
     padding-top: 60px;
   }
-  .title h1 {
-    font-family: Crete Round;
+
+  .title h2 {
+    font-family: Crete Round, Arial, Helvetica, sans-serif;
     font-size: 40px;
     font-style: normal;
     font-weight: 400;
     line-height: 52px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: left;
   }
 
@@ -160,22 +163,22 @@
   }
 
   .post-header {
-    font-family: Crete Round;
+    font-family: Crete Round, Arial, Helvetica, sans-serif;
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
     line-height: 44px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: left;
   }
 
   .post-story {
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: left;
   }
 
@@ -186,22 +189,18 @@
     list-style: none;
   }
 
-  ul {
-    list-style: none;
-  }
-
   .list-item {
     display: flex;
     justify-content: center;
     border: 1px solid #8993a4;
     box-sizing: border-box;
-    background: #ffffff;
+    background: #fff;
     padding: 5px;
   }
 
   .btn {
     grid-column: 1/3;
-    font-family: Inter;
+    font-family: Inter, Arial, Helvetica, sans-serif;
     font-size: 17px;
     font-style: normal;
     font-weight: 700;
@@ -212,8 +211,8 @@
   }
 
   .btn a {
-    color: #ffffff !important;
-    font-family: Inter;
+    color: #fff !important;
+    font-family: Inter, Arial, Helvetica, sans-serif;
     font-size: 17px;
     font-style: normal;
     font-weight: 700;
@@ -221,11 +220,12 @@
     letter-spacing: 0.03em;
     text-align: center;
   }
+
   .list-item a {
     display: flex;
     text-align: center;
     text-decoration: none;
-    font-family: 'Inter';
+    font-family: Inter, Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -250,26 +250,27 @@
   }
 
   .bcg-container h3 {
-    font-family: Crete Round;
+    font-family: Crete Round, Arial, Helvetica, sans-serif;
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
     line-height: 44px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: left;
-    color: #ffffff;
+    color: #fff;
   }
 
   .bcg-container p {
     color: #ffff;
-    font-family: Inter;
+    font-family: Inter, Arial, Helvetica, sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 200;
     line-height: 24px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: left;
   }
+
   .list-2 {
     display: flex;
     justify-content: center;
@@ -278,26 +279,26 @@
     padding: 5px;
     background: rgba(255, 255, 255, 0.24);
   }
+
   .list-2 a {
     display: flex;
     text-align: center;
     text-decoration: none;
-    font-family: 'Inter';
+    font-family: Inter, Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
-    color: #ffffff;
+    color: #fff;
   }
 
   .base-btn {
     background: #ff6b00;
     box-sizing: border-box;
+    height: 40px;
+    cursor: pointer;
     border: 0;
-  }
-  .base-btn a {
-    text-decoration: none;
-    font-family: Inter;
+    font-family: Inter, Georgia, 'Times New Roman', Times, serif;
     font-size: 17px;
     font-style: normal;
     font-weight: 700;
@@ -305,6 +306,13 @@
     letter-spacing: 0.03em;
     text-align: center;
     color: #ffff;
+  }
+
+  .base-btn:hover {
+    cursor: pointer;
+    background: #fff5e1;
+    color: #ff6b00;
+    border: 1px solid #ff6b00;
   }
 
   .about-me {
@@ -315,8 +323,8 @@
     background: #1c1a19;
   }
 
-  .about-me-header h1 {
-    font-family: Crete Round;
+  .about-me-header h2 {
+    font-family: Crete Round, sans-serif;
     font-size: 72px;
     font-style: normal;
     font-weight: 400;
@@ -328,24 +336,23 @@
 
   .post-about-me {
     color: #f4f5f7;
-    font-family: Inter;
+    font-family: Inter, Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: left;
   }
+
   .btn-about-me {
     background: #ff6b00;
     box-sizing: border-box;
     border: none;
     width: 160px;
     padding: 5px;
-  }
-  .btn-about-me a {
     text-decoration: none;
-    font-family: Inter;
+    font-family: Inter, Arial, Helvetica, sans-serif;
     font-size: 17px;
     font-style: normal;
     font-weight: 700;
@@ -364,6 +371,7 @@
     padding-bottom: 150px;
     flex-wrap: wrap;
   }
+
   .about > * {
     margin: 10px;
   }
@@ -376,6 +384,7 @@
     flex-wrap: wrap;
     margin-top: 70px;
   }
+
   .lang-header {
     display: flex;
   }
@@ -387,13 +396,14 @@
     transform: rotate(-45deg);
     margin: 13px 10px;
   }
+
   .lang-header h4 {
-    font-family: Crete Round;
+    font-family: Crete Round, sans-serif;
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
     line-height: 44px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     color: #ffff;
     text-align: left;
   }
@@ -407,16 +417,17 @@
 
   .lang-list-item a {
     text-decoration: none;
-    font-family: Inter;
+    font-family: Inter, Arial, Helvetica, sans-serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
     line-height: 43px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: center;
     color: #ffff;
     margin: 5px 0;
   }
+
   .framework {
     display: flex;
     flex-direction: column;
@@ -425,6 +436,7 @@
     flex-wrap: wrap;
     margin-top: 70px;
   }
+
   .frame-header {
     display: flex;
   }
@@ -435,13 +447,14 @@
     background: #ff6b00;
     margin: 13px 10px;
   }
+
   .frame-header h4 {
-    font-family: Crete Round;
+    font-family: Crete Round, sans-serif;
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
     line-height: 44px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     color: #ffff;
     text-align: left;
   }
@@ -455,16 +468,17 @@
 
   .frame-list-item a {
     text-decoration: none;
-    font-family: Inter;
+    font-family: Inter, Arial, Helvetica, sans-serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
     line-height: 43px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: center;
     color: #ffff;
     margin: 5px 0;
   }
+
   .skills {
     display: flex;
     flex-direction: column;
@@ -473,6 +487,7 @@
     flex-wrap: wrap;
     margin-top: 70px;
   }
+
   .skills-header {
     display: flex;
   }
@@ -484,13 +499,14 @@
     border-radius: 50%;
     margin: 13px 10px;
   }
+
   .skills-header h4 {
-    font-family: Crete Round;
+    font-family: Crete Round, sans-serif;
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
     line-height: 44px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     color: #ffff;
     text-align: left;
   }
@@ -504,12 +520,12 @@
 
   .skills-list-item a {
     text-decoration: none;
-    font-family: Inter;
+    font-family: Inter, Arial, Helvetica, sans-serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
     line-height: 43px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: center;
     color: #ffff;
     margin: 5px 0;
