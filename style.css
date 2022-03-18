@@ -199,9 +199,17 @@
     font-style: normal;
     font-weight: 700;
     line-height: 24px;
+    color: #ffff;
     letter-spacing: 0.03em;
     text-align: center;
     background: #ff6b00;
+  }
+
+  .btn:hover {
+    cursor: pointer;
+    background: #fff5e1;
+    color: #ff6b00;
+    border: 1px solid #ff6b00;
   }
 
   .btn a {
@@ -354,6 +362,13 @@
     letter-spacing: 0.03em;
     text-align: center;
     color: #ffff;
+  }
+
+  .btn-about-me:hover {
+    cursor: pointer;
+    background: #fff5e1;
+    color: #ff6b00;
+    border: 1px solid #ff6b00;
   }
 
   .about {
