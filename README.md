@@ -1,12 +1,14 @@
 # portfolio
 
 > I create the nav and headline in my portfolio project, using HTML, CSS(flexbox), Linters.
+> I add the headlines, the projects cards, and also the about me section. 
 
 Additional description about the project and its features.
 
 ## Built With
 
-- HTML and CSS(flexbox)
+- HTML and CSS
+- Grid Layouts and Flexbox
 - Technologies: Git and GitHub
 
 ## Getting Started
