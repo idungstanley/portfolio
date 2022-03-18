@@ -129,8 +129,7 @@
   }
 
   .work {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     justify-content: center;
     background: #e5e5e5;
     padding: 24px;
