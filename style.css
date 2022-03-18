@@ -51,14 +51,8 @@
     flex-wrap: wrap;
     font-style: normal;
     font-weight: 700;
-    font-family:
-      'Roboto',
-      Oxygen,
-      Ubuntu,
-      Cantarell,
-      'Open Sans',
-      'Helvetica Neue',
-      sans-serif;
+    font-family: 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans',
+      'Helvetica Neue', sans-serif;
     text-decoration: none;
     font-size: 18px;
     line-height: 24px;
@@ -530,7 +524,10 @@
     color: #ffff;
     margin: 5px 0;
   }
-  .lang-container,.skills-container, .frame-container {
+
+  .lang-container,
+  .skills-container,
+  .frame-container {
     list-style: none;
   }
 }
