@@ -6,6 +6,12 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .menu-toggle {
   display: none;
 }
@@ -549,7 +555,7 @@
   .form-section {
     display: grid;
     grid-template-columns: auto;
-    padding: 24px;
+    padding: 24px 24px 0px 24px;
   }
 
   .form-header {
@@ -631,5 +637,14 @@
     width: 131px;
     border-radius: 0px;
     padding: 12px;
+    margin-bottom:112px;
+  }
+
+  .footer-line {
+    width:100%;
+    background-color: #cdcfd3;
+    height: 0.5px;
+    border-top: none;
+    padding: 0px;
   }
 }
