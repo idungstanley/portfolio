@@ -647,4 +647,23 @@ body {
     border-top: none;
     padding: 0px;
   }
+
+  .footer-icons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .bottom-line {
+    display: flex;
+    justify-content: center;
+    width:40%;
+    height: 5px;
+    background-color:#0D151E;
+    margin: 10px 30%;
+    border-radius: 5px;
+  }
+
+  .footer-container li {
+    margin-right: 10px;
+  }
 }
