@@ -619,7 +619,7 @@ body {
 
   #text-area::placeholder {
     height: 90px;
-    width: 303px;
+    width: 100%;
     border-radius: nullpx;
     color: #3c3a39;
     font-family: Inter;
@@ -665,5 +665,18 @@ body {
 
   .footer-container li {
     margin-right: 10px;
+  }
+
+  .form-list {
+    list-style: none;
+  }
+
+  .form-list-items {
+    width: 100%;
+  }
+
+  .list-btn {
+    display: flex;
+    justify-content: center;
   }
 }
