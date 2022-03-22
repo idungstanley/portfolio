@@ -37,6 +37,10 @@ body {
   text-decoration: none;
 }
 
+@media  screen and (max-width) {
+  
+}
+
 @media screen and (max-width: 600px) {
   nav {
     width: 100%;
@@ -606,7 +610,7 @@ body {
     color: #979493;
   }
 
-  #text-area {
+  .text-area {
     height: 114px;
     width: 100%;
     border-radius: 0;
@@ -617,7 +621,7 @@ body {
     background: #fbf8f7;
   }
 
-  #text-area::placeholder {
+  .text-area::placeholder {
     height: 90px;
     width: 100%;
     border-radius: 0;
