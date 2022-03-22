@@ -6,6 +6,12 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .menu-toggle {
   display: none;
 }
@@ -544,5 +550,133 @@
     text-align: center;
     color: #ffff;
     margin: 5px 0;
+  }
+
+  .form-section {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 24px 24px 0 24px;
+  }
+
+  .form-header {
+    font-family: Inter, serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #172b4d;
+    margin-top: 120px;
+    margin-bottom: 73px;
+  }
+
+  .form-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .input {
+    width: 100%;
+    margin-bottom: 14px;
+    border-top: none;
+    padding: 14px;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #dbd8d7;
+    outline: none;
+  }
+
+  .input::placeholder {
+    height: 18px;
+    width: 295px;
+    border-radius: 0;
+    padding: 2px;
+    margin-bottom: 10px;
+    font-family: Inter, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-align: left;
+    color: #979493;
+  }
+
+  .text-area {
+    height: 114px;
+    width: 100%;
+    border-radius: 0;
+    margin-top: 24px;
+    padding: 12px;
+    border: none;
+    outline: none;
+    background: #fbf8f7;
+  }
+
+  .text-area::placeholder {
+    height: 90px;
+    width: 100%;
+    border-radius: 0;
+    color: #3c3a39;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-align: left;
+  }
+
+  .form-btn {
+    border: none;
+    height: 48px;
+    width: 131px;
+    border-radius: 0;
+    padding: 12px;
+    margin-bottom: 112px;
+  }
+
+  .footer-line {
+    width: 100%;
+    background-color: #cdcfd3;
+    height: 0.5px;
+    border-top: none;
+    padding: 0;
+  }
+
+  .footer-icons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .bottom-line {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    height: 5px;
+    background-color: #0d151e;
+    margin: 10px 30%;
+    border-radius: 5px;
+  }
+
+  .footer-container li {
+    margin-right: 10px;
+  }
+
+  .form-list {
+    list-style: none;
+  }
+
+  .form-list-items {
+    width: 100%;
+  }
+
+  .list-btn {
+    display: flex;
+    justify-content: center;
   }
 }

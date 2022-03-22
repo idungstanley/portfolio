@@ -2,6 +2,8 @@
 
 > I create the nav and headline in my portfolio project, using HTML, CSS(flexbox), Linters.
 > I add the headlines, the projects cards, and also the about me section. 
+> I create the form input fields, where user can add their details and send a message.
+> Add footer which has different social icons and links.
 
 Additional description about the project and its features.
 
@@ -57,10 +59,14 @@ To get a local copy up and running follow these simple example steps.
   * Run ```npx eslint```. on the root of your directory of your project.
 
 ## Authors
-👤 **Author1**
+👤 **Sunday Stanley**
 - GitHub: [@githubhandle](https://github.com/idungstanley)
 - Twitter: [@twitterhandle](https://twitter.com/IdungStanley)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/sundaystanley56)
+
+👤 **Andres Garzon**
+- GitHub: [@githubhandle](https://github.com/andgarzonmal)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/andres-garzon-maldonado-951a2a180)
 
 ## 📝 License
 This project is [test](./test.md) licensed.
