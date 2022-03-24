@@ -4,13 +4,16 @@
 > I add the headlines, the projects cards, and also the about me section. 
 > I create the form input fields, where user can add their details and send a message.
 > Add footer which has different social icons and links.
+> I created the desktop version using media queries.
 
 Additional description about the project and its features.
 
 ## Built With
 
 - HTML and CSS
+- Media Query
 - Grid Layouts and Flexbox
+- Positioning
 - Technologies: Git and GitHub
 
 ## Getting Started
