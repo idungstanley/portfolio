@@ -697,7 +697,7 @@ hr {
 
   .container .name-info {
     padding-left: 10%;
-    font-family: Inter sans-serif;
+    font-family: Inter, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
