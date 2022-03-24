@@ -801,7 +801,6 @@ hr {
     background-repeat: no-repeat;
   }
   .card-2 {
-    grid-row-start: 3;
     margin-top: 20px;
     background-image: url(./image/card-2.png);
     background-repeat: no-repeat;
@@ -832,7 +831,7 @@ hr {
 
   .card-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: auto auto auto;
     gap: 20px;
   }
 
@@ -912,22 +911,9 @@ hr {
     justify-content: flex-start;
   }
 
-  .form-name {
-    display: flex;
-    width: 100%;
-    margin: 0;
-  }
-
-  .form-name .form-list-items {
-    margin-right: 3%;
-  }
-
-  #name {
-    display: none;
-  }
-
   .footer-container {
     display: flex;
+    justify-content: center;
     padding: 0;
     margin: 0;
     flex-direction: row;
