@@ -783,6 +783,7 @@ hr {
 
   .post-container {
     display: grid;
+    margin: 0%;
     padding-top: 5%;
     grid-template-columns: auto auto;
   }
