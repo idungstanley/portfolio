@@ -247,12 +247,6 @@ hr {
   text-align: left;
   color: #fff;
 }
-  .bcg-container .base-btn {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
 
 .bcg-container p {
   color: #ffff;
@@ -308,6 +302,13 @@ hr {
   background: #fff5e1;
   color: #ff6b00;
   border: 1px solid #ff6b00;
+}
+
+.bcg-container .base-btn {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .about-me {
@@ -696,13 +697,13 @@ hr {
 
   .container .name-info {
     padding-left: 10%;
-    font-family: Inter;
+    font-family: Inter sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
     margin: 0 10px;
     line-height: 20px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: center;
   }
 
@@ -720,12 +721,12 @@ hr {
   .list-header-container li a {
     text-decoration: none;
     font-family: Inter, sans-serif;
-    color: #ffffff;
+    color: #fff;
     font-size: 15px;
     font-style: normal;
     font-weight: 600;
     line-height: 20px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: center;
   }
 
@@ -800,11 +801,13 @@ hr {
     background-image: url(./image/card-1.png);
     background-repeat: no-repeat;
   }
+
   .card-2 {
     margin-top: 20px;
     background-image: url(./image/card-2.png);
     background-repeat: no-repeat;
   }
+
   .card-3 {
     margin-top: 20px;
     background-image: url(./image/card-3.png);
@@ -849,9 +852,11 @@ hr {
   .card-1 h3 {
     display: none;
   }
+
   .card-1 .list-container {
     display: none;
   }
+
   .card-1 p {
     display: none;
   }
@@ -867,8 +872,7 @@ hr {
     background-position: 100% 100%;
     display: flex;
     flex-direction: column;
-    padding-bottom: 150px;
-    padding: 5%;
+    padding: 7%;
     flex-wrap: wrap;
   }
 
@@ -884,6 +888,7 @@ hr {
   .language {
     align-self: flex-start;
   }
+
   .lang-container {
     text-align: left;
   }
