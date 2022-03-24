@@ -132,7 +132,7 @@ hr {
   text-align: left;
 }
 
-.title span {
+.title hr {
   flex: 1;
   margin: 24px 0;
   flex-basis: 100%;
@@ -222,6 +222,7 @@ hr {
   margin-top: 20px;
   height: 100vh;
   width: 100%;
+  margin-bottom: 0;
   background-image: url(./image/bcg-img-2.png);
   background-repeat: no-repeat;
 }
@@ -232,9 +233,9 @@ hr {
   justify-content: center;
   padding: 20px;
   width: 100%;
+  position: relative;
   flex-direction: column;
 }
-
 
 .bcg-container h3 {
   font-family: Crete Round, Arial, Helvetica, sans-serif;
@@ -246,6 +247,12 @@ hr {
   text-align: left;
   color: #fff;
 }
+  .bcg-container .base-btn {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 
 .bcg-container p {
   color: #ffff;
@@ -283,6 +290,7 @@ hr {
   background: #ff6b00;
   height: 40px;
   cursor: pointer;
+  margin-top: 0;
   width: 100%;
   border: 0;
   font-family: Inter, Georgia, 'Times New Roman', Times, serif;
@@ -374,7 +382,7 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content:center;
+  align-content: center;
   flex-wrap: wrap;
   margin-top: 70px;
 }
@@ -553,6 +561,10 @@ hr {
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
+}
+
+.form-name {
+  display: none;
 }
 
 .input {
@@ -747,28 +759,30 @@ hr {
     order: 1;
   }
 
-
+  .work {
+    padding: 5% 5%;
+  }
 
   .title {
-    display: flex;
-    flex-wrap: nowrap;
-    padding: 135px 5% 60px 5%;
+    display: grid;
+    grid-template-columns: auto 3fr;
+    margin-bottom: 50px;
   }
 
   .title h2 {
-    margin-right: 0;
     color: #091e42;
-    padding-right: 0;
+    margin-right: 25px;
   }
 
   .title-hr {
-    width: 50%;
-    margin-left: 25px;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
   }
 
   .post-container {
     display: grid;
-    padding: 10px 5%;
+    padding: 10px 0;
     grid-template-columns: auto auto;
   }
 
@@ -776,139 +790,150 @@ hr {
     width: 100%;
     height: auto;
   }
-  
+
   .post-body {
     margin-left: 24px;
   }
 
   .card-1 {
     margin-top: 20px;
-    grid-column-start: 2;
-    grid-row-start: 3;
-    height: 100vh;
-    width: 100%;
     background-image: url(./image/card-1.png);
     background-repeat: no-repeat;
   }
   .card-2 {
+    grid-row-start: 3;
     margin-top: 20px;
-    height: 100vh;
-    width: 100%;
     background-image: url(./image/card-2.png);
     background-repeat: no-repeat;
   }
   .card-3 {
     margin-top: 20px;
-    height: 100vh;
-    width: 100%;
     background-image: url(./image/card-3.png);
     background-repeat: no-repeat;
   }
 
   .card-4 {
     margin-top: 20px;
-    width: 100%;
-    background-image: url(./image/card-1.png);
+    background-image: url(./image/bcg-img-2.png);
     background-repeat: no-repeat;
   }
 
   .card-5 {
     margin-top: 20px;
-    height: 100vh;
-    width: 100%;
     background-image: url(./image/card-2.png);
     background-repeat: no-repeat;
   }
 
-
   .card-6 {
     margin-top: 20px;
-    height: 100vh;
-    width: 100%;
     background-image: url(./image/card-3.png);
     background-repeat: no-repeat;
   }
 
   .card-container {
     display: grid;
-    padding: 0 5%;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
   }
 
+  .bcg-container {
+    position: relative;
+  }
+
+  .bcg-container .base-btn {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .card-1 h3 {
+    display: none;
+  }
+  .card-1 .list-container {
+    display: none;
+  }
+  .card-1 p {
+    display: none;
+  }
+
+  .cd .base-btn {
+    display: none;
+  }
+
   .about {
-  background-image: url(./image/about-base.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 100% 100%;
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 150px;
-  padding: 5%;
-  flex-wrap: wrap;
-}
+    background-image: url(./image/about-base.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 150px;
+    padding: 5%;
+    flex-wrap: wrap;
+  }
 
-.post-about-me {
-  width: 50%;
-}
+  .post-about-me {
+    width: 50%;
+  }
 
-.tech-ability {
-  display: grid;
-  grid-template-columns: auto auto auto;
-}
+  .tech-ability {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
 
-.language {
-  align-self: flex-start;
-}
-.lang-container {
-  text-align: left;
-}
+  .language {
+    align-self: flex-start;
+  }
+  .lang-container {
+    text-align: left;
+  }
 
-.frame-container {
-  text-align: left;
-}
+  .frame-container {
+    text-align: left;
+  }
 
-.skills-container {
-  text-align: left;
-}
+  .skills-container {
+    text-align: left;
+  }
 
-.form-section {
-  display: grid;
-  padding: 7%;
-  gap: 20px;
-  grid-template-columns: 1fr 1fr;
-}
+  .form-section {
+    display: grid;
+    padding: 7%;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+  }
 
-.form-header {
-  text-align: left;
-}
+  .form-header {
+    text-align: left;
+  }
 
-.list-btn {
-  justify-content: flex-start;
-}
+  .list-btn {
+    justify-content: flex-start;
+  }
 
-.form-name {
-  display: flex;
-  width: 100%;
-  margin: 0;
-}
+  .form-name {
+    display: flex;
+    width: 100%;
+    margin: 0;
+  }
 
-.form-name .form-list-items {
-  margin-right: 3%;
-}
+  .form-name .form-list-items {
+    margin-right: 3%;
+  }
 
-#name {
-  display: none;
-}
+  #name {
+    display: none;
+  }
 
-.icon {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  flex-direction: row;
-}
+  .footer-container {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-direction: row;
+  }
 
-.bottom-line {
-  display: none;
-}
+  .bottom-line {
+    display: none;
+  }
 }
