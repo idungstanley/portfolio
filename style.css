@@ -837,7 +837,7 @@ hr {
     align-self: flex-start;
   }
 
-  .btn::hover {
+  .btn:hover {
     cursor: pointer;
     background: #fff5e1;
     color: #ff6b00;
@@ -859,6 +859,7 @@ hr {
       transform: scale(1);
     }
   }
+
   .card-1 {
     margin-top: 20px;
     background-image: url(./image/card-1.png);
@@ -967,8 +968,7 @@ hr {
   }
 
   .post-about-me {
-   width: 50%; 
-  
+    width: 50%;
   }
 
   .tech-ability {
@@ -1007,7 +1007,6 @@ hr {
     font-weight: 700;
     line-height: 44px;
     letter-spacing: 0;
-    text-align: center;
     color: #172b4d;
     margin-bottom: 73px;
   }
@@ -1029,7 +1028,7 @@ hr {
     }
 
     100% {
-      transform: translate(0px, 0px);
+      transform: translate(0, 0);
     }
   }
 
