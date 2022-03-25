@@ -844,7 +844,22 @@ hr {
     border: 1px solid #ff6b00;
   }
 
+  .cd:hover {
+    cursor: pointer;
+    animation-name: cards;
+    animation-duration: 2s;
+  }
 
+  @keyframes cards {
+    
+    25%{
+      transform: scale(0.7);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
   .card-1 {
     margin-top: 20px;
     background-image: url(./image/card-1.png);
