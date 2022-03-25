@@ -706,9 +706,9 @@ hr {
     letter-spacing: 0;
     position: relative;
     text-align: center;
-    animation-duration: 4.5s;
-    animation-name: slidein;
-    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-name: slideup;
+    animation-delay: 0.3s;
     /* animation-iteration-count: infinite; */
   }
 
@@ -721,7 +721,7 @@ hr {
     background-color: #c0222298;
   } */
 
-  @keyframes slidein {
+  @keyframes slideup {
     from {
       width: 100%;
       margin-right: 300%;
