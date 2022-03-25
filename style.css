@@ -696,15 +696,46 @@ hr {
   }
 
   .container .name-info {
-    padding-left: 10%;
+    margin: 0 0 0 10%;
     font-family: Inter, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
-    margin: 0 10px;
+    width: 100%;
     line-height: 20px;
     letter-spacing: 0;
+    position: relative;
     text-align: center;
+    animation-duration: 4.5s;
+    animation-name: slidein;
+    animation-delay: 1s;
+    /* animation-iteration-count: infinite; */
+  }
+
+  /* .name-info span {
+    position: absolute;
+    width: 150px;
+    height: 22px;
+    left: 0;
+    top: 0;
+    background-color: #c0222298;
+  } */
+
+  @keyframes slidein {
+    from {
+      width: 100%;
+      margin-right: 300%;
+    }
+
+    50% {
+      font-size: 50px;
+      color: #8993a4;
+    }
+
+    to {
+      width: 100%;
+      margin-left: 10%;
+    }
   }
 
   .container ul {
@@ -817,7 +848,7 @@ hr {
     margin-top: 20px;
     background-image: url(./image/card-1.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
   }
 
   .card-2 {
@@ -825,7 +856,7 @@ hr {
     background-image: url(./image/card-2.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-size: cover;
+    background-size: 100% 100%;
   }
 
   .card-3 {
@@ -833,7 +864,7 @@ hr {
     background-image: url(./image/card-3.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-size: cover;
+    background-size: 100% 100%;
   }
 
   .card-4 {
@@ -841,7 +872,7 @@ hr {
     background-image: url(./image/bcg-img-2.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-size: cover;
+    background-size: 100% 100%;
   }
 
   .card-5 {
@@ -849,14 +880,14 @@ hr {
     background-image: url(./image/card-2.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-size: cover;
+    background-size: 100% 100%;
   }
 
   .card-6 {
     margin-top: 20px;
     background-image: url(./image/card-3.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
   }
 
   .card-container {
@@ -902,7 +933,11 @@ hr {
   }
 
   .cd .base-btn {
-    display: none;
+    visibility: hidden;
+  }
+
+  .cd .base-btn::hover {
+    visibility: visible;
   }
 
   .about {
