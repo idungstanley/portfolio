@@ -294,7 +294,7 @@ hr {
   line-height: 24px;
   letter-spacing: 0.03em;
   text-align: center;
-  transition: ease-in-out 1s ;
+  transition: ease-in-out 1s;
   color: #ffff;
 }
 
@@ -806,7 +806,7 @@ hr {
 
   .post-container {
     display: grid;
-    margin: 0%;
+    margin: 0;
     padding-top: 5%;
     grid-template-columns: auto auto;
   }
@@ -832,7 +832,7 @@ hr {
   }
 
   .btn {
-    transition: ease-in-out 1s ;
+    transition: ease-in-out 1s;
     margin-top: 24px;
     align-self: flex-start;
   }
@@ -851,8 +851,7 @@ hr {
   }
 
   @keyframes cards {
-    
-    25%{
+    25% {
       transform: scale(0.7);
     }
 
@@ -952,7 +951,7 @@ hr {
     visibility: hidden;
   }
 
-  .cd .base-btn::hover {
+  .cd .base-btn:hover {
     visibility: visible;
   }
 
@@ -968,7 +967,8 @@ hr {
   }
 
   .post-about-me {
-    width: 50%;
+   width: 50%; 
+  
   }
 
   .tech-ability {
@@ -1013,6 +1013,7 @@ hr {
   }
 
   .form-header h2 {
+    text-align: left;
     animation-name: slider;
     animation-duration: 5s;
     animation-delay: 1s;
