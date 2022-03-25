@@ -985,6 +985,36 @@ hr {
 
   .form-header {
     text-align: left;
+    font-family: Inter, serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #172b4d;
+    margin-bottom: 73px;
+  }
+
+  .form-header h2 { 
+    animation-name:slider;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes slider {
+    25% {
+      transform: translate(-1000px,-100px);
+    }
+    
+    50% {
+      transform: translate(30px,30px);
+    }
+
+    100% {
+      transform: translate(0px,0px);
+    }
   }
 
   .list-btn {
@@ -1002,4 +1032,6 @@ hr {
   .bottom-line {
     display: none;
   }
+
+ 
 }
