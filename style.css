@@ -709,17 +709,7 @@ hr {
     animation-duration: 2s;
     animation-name: slideup;
     animation-delay: 0.3s;
-    /* animation-iteration-count: infinite; */
   }
-
-  /* .name-info span {
-    position: absolute;
-    width: 150px;
-    height: 22px;
-    left: 0;
-    top: 0;
-    background-color: #c0222298;
-  } */
 
   @keyframes slideup {
     from {
