@@ -294,6 +294,7 @@ hr {
   line-height: 24px;
   letter-spacing: 0.03em;
   text-align: center;
+  transition: ease-in-out 1s ;
   color: #ffff;
 }
 
@@ -354,6 +355,7 @@ hr {
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.03em;
+  transition: ease-in-out 1s;
   text-align: center;
   color: #ffff;
 }
@@ -830,9 +832,18 @@ hr {
   }
 
   .btn {
+    transition: ease-in-out 1s ;
     margin-top: 24px;
     align-self: flex-start;
   }
+
+  .btn::hover {
+    cursor: pointer;
+    background: #fff5e1;
+    color: #ff6b00;
+    border: 1px solid #ff6b00;
+  }
+
 
   .card-1 {
     margin-top: 20px;
@@ -986,23 +997,23 @@ hr {
     margin-bottom: 73px;
   }
 
-  .form-header h2 { 
-    animation-name:slider;
+  .form-header h2 {
+    animation-name: slider;
     animation-duration: 5s;
     animation-delay: 1s;
   }
 
   @keyframes slider {
     25% {
-      transform: translate(-1000px,-100px);
+      transform: translate(-1000px, -100px);
     }
-    
+
     50% {
-      transform: translate(30px,30px);
+      transform: translate(30px, 30px);
     }
 
     100% {
-      transform: translate(0px,0px);
+      transform: translate(0px, 0px);
     }
   }
 
@@ -1021,6 +1032,4 @@ hr {
   .bottom-line {
     display: none;
   }
-
- 
 }
