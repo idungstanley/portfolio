@@ -5,6 +5,7 @@
 > I create the form input fields, where user can add their details and send a message.
 > Add footer which has different social icons and links.
 > I created the desktop version using media queries.
+> I Deployed my website using GitHub pages
 
 Additional description about the project and its features.
 
@@ -38,6 +39,8 @@ To get a local copy up and running follow these simple example steps.
   * Run ```code .``` to open your VScode Editor
 * Create the Github\workflows Folder
   * Create a Linters.yml file and configure
+* Build and Deploy
+ * Portfolio Page: [Click me](https://idungstanley.github.io/portfolio/)
 
 ### Install
 
