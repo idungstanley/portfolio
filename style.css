@@ -44,6 +44,10 @@ nav {
   flex: 1;
 }
 
+.close {
+  display: none;
+}
+
 .container ul {
   display: none;
 }
