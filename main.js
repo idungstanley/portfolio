@@ -15,3 +15,5 @@ function toggleMenu() {
     open.style.display = 'none'
   }
 }
+
+hamburger.addEventListener("click", toggleMenu);
