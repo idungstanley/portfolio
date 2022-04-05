@@ -360,7 +360,7 @@ hr {
 
 .about-me {
   display: flex;
-  padding-top: 60px;
+  padding-top: 80px;
   padding-bottom: 60px;
   flex-direction: column;
   background: #1c1a19;
@@ -599,11 +599,11 @@ hr {
 .form-section {
   display: grid;
   grid-template-columns: auto;
-  margin-top: 120px;
   padding: 24px 24px 0 24px;
 }
 
 .form-header {
+  margin-top: 120px;
   font-family: Inter, serif;
   font-size: 32px;
   font-style: normal;
