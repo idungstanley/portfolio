@@ -940,52 +940,6 @@ hr {
     }
   }
 
-  .card-1 {
-    margin-top: 20px;
-    background-image: url(./image/card-1.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-  }
-
-  .card-2 {
-    margin-top: 20px;
-    background-image: url(./image/card-2.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-size: 100% 100%;
-  }
-
-  .card-3 {
-    margin-top: 20px;
-    background-image: url(./image/card-3.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-size: 100% 100%;
-  }
-
-  .card-4 {
-    margin-top: 20px;
-    background-image: url(./image/bcg-img-2.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-size: 100% 100%;
-  }
-
-  .card-5 {
-    margin-top: 20px;
-    background-image: url(./image/card-2.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-size: 100% 100%;
-  }
-
-  .card-6 {
-    margin-top: 20px;
-    background-image: url(./image/card-3.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-  }
-
   .card-container {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -1016,15 +970,30 @@ hr {
     bottom: 0;
   }
 
-  .card-1 h3 {
+  .card-container article:nth-child(odd) {
+    margin-top: 20px;
+    background-image: url(./image/card-1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .card-container article:nth-child(even) {
+    margin-top: 20px;
+    background-image: url(./image/card-2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+  }
+
+  .card-container article:nth-child(1) h3 {
     display: none;
   }
 
-  .card-1 .list-container {
+  .card-container article:nth-child(1) .list-container {
     display: none;
   }
 
-  .card-1 p {
+  .card-container article:nth-child(1) p {
     display: none;
   }
 
