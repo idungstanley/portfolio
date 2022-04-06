@@ -1096,4 +1096,90 @@ hr {
   .bottom-line {
     display: none;
   }
+  .modal-container {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    bottom: 0;
+    padding: 2%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #979493;
+    background-blend-mode: soft-light;
+  }
+  .modal-content {
+    padding: 1.5%;
+    background-color: #fff;
+  }
+  .modal-header {
+    display: flex;
+    
+    justify-content: space-between;
+  }
+
+  .modal-header h2 {
+    flex-wrap: wrap;
+    font-family: Crete Round;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #172b4d;
+  }
+
+  .modal-header .fa-times {
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 3rem;
+    right: 4rem;
+    color: #67798e;
+  }
+  .modal-header .fa-times:hover {
+    transform: rotate(90deg);
+    color: red;
+  }
+
+  .modal-flex {
+    display: flex;
+    height: 100%;
+    margin-top: 1rem;
+  }
+
+  .modal-desc {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .modal-desc p {
+    flex-wrap: wrap;
+  }
+
+  .button-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .modal-item {
+    border: 1px solid #3C3A39;
+    width: 50px;
+    text-align: center;
+    margin-right: 20px;
+  }
+  
+  .modal-list {
+    list-style: none;
+    display: flex;
+  }
+  .modal-item a {
+    text-decoration: none;
+    text-align: center;
+  }
 }
