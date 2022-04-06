@@ -106,15 +106,6 @@ function loadCardData() {
 }
 }
 
-
-
-const popbtn = document.querySelectorAll(".pop")
-popbtn.addEventListener("click", (event)=>{
-console.log(event.srcElement.id);
-})
-
-
-
 loadCardData()
 
 function toggleMenu() {
