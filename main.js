@@ -5,7 +5,179 @@ const open = document.querySelector('.open');
 const items = document.querySelectorAll('.menu-item');
 const logo = document.querySelector('.name-info');
 const { body } = document;
+const cardContainer = document.querySelector('.card-container');
+const projectSection = document.querySelector('.work');
 
+const project = [
+  {
+    id: 0,
+    title: 'Profesional Art Printing Data',
+    description:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    technologies: ['Html', 'Bootstrap', 'Ruby'],
+    image: './image/Snapshoot-Portfolio.png',
+    'github source': 'dummylink.com',
+    'live project': 'dummylink.com',
+  },
+  {
+    id: 1,
+    title: 'Profesional Art Printing Data',
+    description:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    technologies: ['Html', 'Bootstrap', 'Ruby'],
+    image: './image/Snapshoot-Portfolio.png',
+    'github source': 'dummylink.com',
+    'live project': 'dummylink.com',
+  },
+  {
+    id: 2,
+    title: 'Profesional Art Printing Data and my work',
+    description:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    technologies: ['Html', 'Bootstrap', 'Ruby'],
+    image: './image/Snapshoot-Portfolio.png',
+    'github source': 'dummylink.com',
+    'live project': 'dummylink.com',
+  },
+  {
+    id: 3,
+    title: 'Profesional Art Printing Data',
+    description:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    technologies: ['Html', 'Bootstrap', 'Ruby'],
+    image: './image/Snapshoot-Portfolio.png',
+    'github source': 'dummylink.com',
+    'live project': 'dummylink.com',
+  },
+  {
+    id: 4,
+    title: 'Profesional Art Printing Data',
+    description:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    technologies: ['Html', 'Bootstrap', 'Ruby'],
+    image: './image/Snapshoot-Portfolio.png',
+    'github source': 'dummylink.com',
+    'live project': 'dummylink.com',
+  },
+  {
+    id: 5,
+    title: 'Profesional Art Printing Data',
+    description:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard and all you want will be given to you",
+    technologies: ['Html', 'Bootstrap', 'Ruby'],
+    image: './image/Snapshoot-Portfolio.png',
+    'github source': 'dummylink.com',
+    'live project': 'dummylink.com',
+  },
+];
+
+for (let i = 0; i < project.length; i += 1) {
+  const article = document.createElement('article');
+  const heading3 = document.createElement('h3');
+  const paragraph = document.createElement('p');
+  const listContainer = document.createElement('ul');
+  const btn = document.createElement('button');
+
+  // const name = project[i].title;
+  const { description } = project[i];
+  const { technologies } = project[i];
+  cardContainer.appendChild(article);
+  article.classList.add('bcg-container', 'project-card');
+  if (i > 0) {
+    article.classList.add('cd');
+  }
+
+  article.append(heading3, paragraph, listContainer, btn);
+  for (let j = 0; j < technologies.length; j += 1) {
+    const link = document.createElement('a');
+    const listItem = document.createElement('li');
+    listContainer.appendChild(listItem);
+    listContainer.classList.add('list-container');
+    listItem.appendChild(link);
+    listItem.classList.add('list-2');
+    link.innerText = technologies[j];
+  }
+
+  heading3.innerText = project[i].title;
+  paragraph.innerText = description;
+  btn.innerText = 'See Project';
+  btn.classList.add('base-btn', 'pop');
+  btn.setAttribute('id', i);
+  btn.setAttribute('onclick', `showPopup(${i})`);
+
+  const cards = document.querySelectorAll('.project-card');
+  Array.from(cards).forEach((card) => {
+    card.addEventListener('mouseover', () => {
+      if (project[i].id > 0) {
+        article.classList.remove('cd');
+      }
+    });
+    card.addEventListener('mouseout', () => {
+      if (project[i].id > 0) {
+        article.classList.add('cd');
+      }
+    });
+  });
+}
+
+function showPopup(id) {
+  const temp = document.getElementById(id).getAttribute('id');
+  const modalContainer = document.createElement('div');
+  const modalFex = document.createElement('div');
+  const header = document.createElement('header');
+  const icon = document.createElement('i');
+  const modalDescription = document.createElement('div');
+  const buttonContainer = document.createElement('div');
+  const article = document.createElement('article');
+  const heading3 = document.createElement('h3');
+  const paragraph = document.createElement('p');
+  const listContainer = document.createElement('ul');
+  const image = document.createElement('img');
+  const liveImg = document.createElement('img');
+  const sourceImg = document.createElement('img');
+  const liveBtn = document.createElement('button');
+  const sourceBtn = document.createElement('button');
+  projectSection.appendChild(modalContainer);
+  modalContainer.classList.add('modal-container');
+  modalContainer.appendChild(article);
+  article.classList.add('modal-content');
+  article.append(header, listContainer, modalFex);
+  header.classList.add('modal-header');
+  header.append(heading3, icon);
+  heading3.innerText = project[temp].title;
+  icon.classList.add('fas', 'fa-times');
+  for (let j = 0; j < project[temp].technologies.length; j += 1) {
+    const link = document.createElement('a');
+    const listItem = document.createElement('li');
+    listContainer.appendChild(listItem);
+    listContainer.classList.add('modal-list');
+    listItem.appendChild(link);
+    listItem.classList.add('modal-item');
+    link.innerText = project[temp].technologies[j];
+  }
+  modalFex.classList.add('modal-flex');
+  modalFex.append(image, modalDescription);
+  image.src = project[temp].image;
+  modalDescription.classList.add('modal-desc');
+  modalDescription.append(paragraph, buttonContainer);
+  paragraph.innerText = project[temp].description;
+  buttonContainer.classList.add('button-container');
+  buttonContainer.append(liveBtn, sourceBtn);
+  liveBtn.classList.add('live', 'base-btn');
+  liveBtn.innerText = 'See live';
+  liveBtn.appendChild(liveImg);
+  liveImg.src = './image/see-live.svg';
+  sourceBtn.classList.add('source', 'base-btn');
+  sourceBtn.innerText = 'See Source';
+  sourceBtn.appendChild(sourceImg);
+  sourceImg.src = './image/GitHub-source.png';
+  const popDisplay = document.querySelector('.modal-container');
+  popDisplay.style.display = 'block';
+  icon.addEventListener('click', () => {
+    projectSection.removeChild(modalContainer);
+  });
+}
+showPopup();
 function toggleMenu() {
   if (menu.classList.contains('active')) {
     menu.classList.remove('active');
@@ -23,4 +195,6 @@ function toggleMenu() {
 }
 
 hamburger.addEventListener('click', toggleMenu);
-items.forEach((item) => item.addEventListener('click', toggleMenu));
+items.forEach((item) => {
+  item.addEventListener('click', toggleMenu);
+});

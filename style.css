@@ -585,6 +585,16 @@ hr {
   margin: 5px 0;
 }
 
+.modal-item a {
+  text-decoration: none;
+  text-align: center;
+  font-family: Poppins, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0;
+}
+
 .list-header-container li a {
   text-decoration: none;
   color: #fff5e1;
@@ -728,6 +738,102 @@ hr {
   justify-content: center;
 }
 
+.modal-container {
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  bottom: 0;
+  padding: 2%;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.932);
+  background-blend-mode: soft-light;
+}
+
+.modal-content {
+  padding: 2%;
+  background-color: #fff;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-header h3 {
+  flex-wrap: wrap;
+  font-family: Crete Round, sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #172b4d;
+}
+
+.modal-header .fa-times {
+  font-size: 2rem;
+  cursor: pointer;
+  color: #67798e;
+}
+
+.modal-header .fa-times:hover {
+  color: rgba(255, 0, 0, 0.747);
+}
+
+.modal-flex {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-top: 1rem;
+}
+
+.modal-flex > img {
+  width: 100%;
+  flex-grow: 0.6;
+}
+
+.modal-desc {
+  margin-left: 0;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.modal-desc p {
+  flex-wrap: wrap;
+  text-align: left;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0;
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.modal-item {
+  border: 1px solid #3c3a39;
+  width: fit-content;
+  padding: 2%;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.modal-list {
+  list-style: none;
+  display: flex;
+}
+
 @media screen and (min-width: 768px) {
   * {
     padding: 0;
@@ -753,8 +859,6 @@ hr {
     margin: 0;
     border-bottom: none;
   }
-
-  /* .msg {} */
 
   .container {
     background-color: #3e3c3c;
@@ -819,6 +923,15 @@ hr {
 
   .msg {
     display: block;
+  }
+
+  .modal-desc p {
+    flex-wrap: wrap;
+  }
+
+  .modal-item a {
+    text-decoration: none;
+    text-align: center;
   }
 
   .list-header-container li a {
@@ -940,52 +1053,6 @@ hr {
     }
   }
 
-  .card-1 {
-    margin-top: 20px;
-    background-image: url(./image/card-1.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-  }
-
-  .card-2 {
-    margin-top: 20px;
-    background-image: url(./image/card-2.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-size: 100% 100%;
-  }
-
-  .card-3 {
-    margin-top: 20px;
-    background-image: url(./image/card-3.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-size: 100% 100%;
-  }
-
-  .card-4 {
-    margin-top: 20px;
-    background-image: url(./image/bcg-img-2.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-size: 100% 100%;
-  }
-
-  .card-5 {
-    margin-top: 20px;
-    background-image: url(./image/card-2.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-size: 100% 100%;
-  }
-
-  .card-6 {
-    margin-top: 20px;
-    background-image: url(./image/card-3.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-  }
-
   .card-container {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -1016,15 +1083,41 @@ hr {
     bottom: 0;
   }
 
-  .card-1 h3 {
+  .modal-header h3 {
+    flex-wrap: wrap;
+    font-family: Crete Round, sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: 0;
+    text-align: left;
+    color: #172b4d;
+  }
+
+  .card-container article:nth-child(odd) {
+    margin-top: 20px;
+    background-image: url(./image/card-1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .card-container article:nth-child(even) {
+    margin-top: 20px;
+    background-image: url(./image/card-2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+  }
+
+  .card-container article:nth-child(1) h3 {
     display: none;
   }
 
-  .card-1 .list-container {
+  .card-container article:nth-child(1) .list-container {
     display: none;
   }
 
-  .card-1 p {
+  .card-container article:nth-child(1) p {
     display: none;
   }
 
@@ -1126,5 +1219,104 @@ hr {
 
   .bottom-line {
     display: none;
+  }
+
+  .modal-container {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    bottom: 0;
+    padding: 2%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #979493;
+    background-blend-mode: soft-light;
+  }
+
+  .modal-content {
+    padding: 1.5%;
+    background-color: #fff;
+  }
+
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .modal-header .fa-times {
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 3rem;
+    right: 4rem;
+    color: #67798e;
+  }
+
+  .modal-header .fa-times:hover {
+    transform: rotate(90deg);
+    color: red;
+  }
+
+  .modal-flex {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    margin-top: 1rem;
+  }
+
+  .modal-flex > img {
+    width: auto;
+    flex-grow: 0.6;
+  }
+
+  .modal-desc {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .button-container {
+    display: grid;
+    grid-template-columns: 0.6fr 0.6fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .modal-item {
+    border: 1px solid #3c3a39;
+    width: fit-content;
+    padding: 5px;
+    text-align: center;
+    margin-right: 20px;
+  }
+
+  .modal-list {
+    list-style: none;
+    display: flex;
+  }
+
+  .live {
+    padding: 5px;
+    height: auto;
+    font-family: Inter, sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
+
+  .source {
+    font-family: Inter, sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    padding: 5px;
+    height: auto;
   }
 }
