@@ -854,7 +854,7 @@ input:focus:invalid {
   box-sizing: border-box;
 }
 
-#label{
+#label {
   display: flex;
   flex-direction: column;
 }
