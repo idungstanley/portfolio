@@ -1,12 +1,12 @@
-const menu = document.querySelector('.menu');
-const hamburger = document.querySelector('.menu-toggle');
-const close = document.querySelector('.close');
-const open = document.querySelector('.open');
-const items = document.querySelectorAll('.menu-item');
-const logo = document.querySelector('.name-info');
-const { body } = document;
-const cardContainer = document.querySelector('.card-container');
-const projectSection = document.querySelector('.work');
+const menu = document.querySelector('.menu')
+const hamburger = document.querySelector('.menu-toggle')
+const close = document.querySelector('.close')
+const open = document.querySelector('.open')
+const items = document.querySelectorAll('.menu-item')
+const logo = document.querySelector('.name-info')
+const { body } = document
+const cardContainer = document.querySelector('.card-container')
+const projectSection = document.querySelector('.work')
 
 const project = [
   {
@@ -69,132 +69,167 @@ const project = [
     'github source': 'dummylink.com',
     'live project': 'dummylink.com',
   },
-];
+]
 
 for (let i = 0; i < project.length; i += 1) {
-  const article = document.createElement('article');
-  const heading3 = document.createElement('h3');
-  const paragraph = document.createElement('p');
-  const listContainer = document.createElement('ul');
-  const btn = document.createElement('button');
-
-  // const name = project[i].title;
-  const { description } = project[i];
-  const { technologies } = project[i];
-  cardContainer.appendChild(article);
-  article.classList.add('bcg-container', 'project-card');
+  const article = document.createElement('article')
+  const heading3 = document.createElement('h3')
+  const paragraph = document.createElement('p')
+  const listContainer = document.createElement('ul')
+  const btn = document.createElement('button')
+  const { description } = project[i]
+  const { technologies } = project[i]
+  cardContainer.appendChild(article)
+  article.classList.add('bcg-container', 'project-card')
   if (i > 0) {
-    article.classList.add('cd');
+    article.classList.add('cd')
   }
 
-  article.append(heading3, paragraph, listContainer, btn);
+  article.append(heading3, paragraph, listContainer, btn)
   for (let j = 0; j < technologies.length; j += 1) {
-    const link = document.createElement('a');
-    const listItem = document.createElement('li');
-    listContainer.appendChild(listItem);
-    listContainer.classList.add('list-container');
-    listItem.appendChild(link);
-    listItem.classList.add('list-2');
-    link.innerText = technologies[j];
+    const link = document.createElement('a')
+    const listItem = document.createElement('li')
+    listContainer.appendChild(listItem)
+    listContainer.classList.add('list-container')
+    listItem.appendChild(link)
+    listItem.classList.add('list-2')
+    link.innerText = technologies[j]
   }
 
-  heading3.innerText = project[i].title;
-  paragraph.innerText = description;
-  btn.innerText = 'See Project';
-  btn.classList.add('base-btn', 'pop');
-  btn.setAttribute('id', i);
-  btn.setAttribute('onclick', `showPopup(${i})`);
+  heading3.innerText = project[i].title
+  paragraph.innerText = description
+  btn.innerText = 'See Project'
+  btn.classList.add('base-btn', 'pop')
+  btn.setAttribute('id', i)
 
-  const cards = document.querySelectorAll('.project-card');
+  const cards = document.querySelectorAll('.project-card')
   Array.from(cards).forEach((card) => {
     card.addEventListener('mouseover', () => {
       if (project[i].id > 0) {
-        article.classList.remove('cd');
+        article.classList.remove('cd')
       }
-    });
+    })
     card.addEventListener('mouseout', () => {
       if (project[i].id > 0) {
-        article.classList.add('cd');
+        article.classList.add('cd')
       }
-    });
-  });
+    })
+  })
 }
 
-function showPopup(id) {
-  const temp = document.getElementById(id).getAttribute('id');
-  const modalContainer = document.createElement('div');
-  const modalFex = document.createElement('div');
-  const header = document.createElement('header');
-  const icon = document.createElement('i');
-  const modalDescription = document.createElement('div');
-  const buttonContainer = document.createElement('div');
-  const article = document.createElement('article');
-  const heading3 = document.createElement('h3');
-  const paragraph = document.createElement('p');
-  const listContainer = document.createElement('ul');
-  const image = document.createElement('img');
-  const liveImg = document.createElement('img');
-  const sourceImg = document.createElement('img');
-  const liveBtn = document.createElement('button');
-  const sourceBtn = document.createElement('button');
-  projectSection.appendChild(modalContainer);
-  modalContainer.classList.add('modal-container');
-  modalContainer.appendChild(article);
-  article.classList.add('modal-content');
-  article.append(header, listContainer, modalFex);
-  header.classList.add('modal-header');
-  header.append(heading3, icon);
-  heading3.innerText = project[temp].title;
-  icon.classList.add('fas', 'fa-times');
-  for (let j = 0; j < project[temp].technologies.length; j += 1) {
-    const link = document.createElement('a');
-    const listItem = document.createElement('li');
-    listContainer.appendChild(listItem);
-    listContainer.classList.add('modal-list');
-    listItem.appendChild(link);
-    listItem.classList.add('modal-item');
-    link.innerText = project[temp].technologies[j];
-  }
-  modalFex.classList.add('modal-flex');
-  modalFex.append(image, modalDescription);
-  image.src = project[temp].image;
-  modalDescription.classList.add('modal-desc');
-  modalDescription.append(paragraph, buttonContainer);
-  paragraph.innerText = project[temp].description;
-  buttonContainer.classList.add('button-container');
-  buttonContainer.append(liveBtn, sourceBtn);
-  liveBtn.classList.add('live', 'base-btn');
-  liveBtn.innerText = 'See live';
-  liveBtn.appendChild(liveImg);
-  liveImg.src = './image/see-live.svg';
-  sourceBtn.classList.add('source', 'base-btn');
-  sourceBtn.innerText = 'See Source';
-  sourceBtn.appendChild(sourceImg);
-  sourceImg.src = './image/GitHub-source.png';
-  const popDisplay = document.querySelector('.modal-container');
-  popDisplay.style.display = 'block';
-  icon.addEventListener('click', () => {
-    projectSection.removeChild(modalContainer);
-  });
-}
-showPopup();
+const popBtn = document.querySelectorAll('.pop')
+Array.from(popBtn).forEach((btn) => {
+  btn.addEventListener('click', (event) => {
+    project.filter(project=>{
+      if (event.target.id == project.id) {
+        const modalContainer = document.createElement('div')
+        const modalFex = document.createElement('div')
+        const header = document.createElement('header')
+        const icon = document.createElement('i')
+        const modalDescription = document.createElement('div')
+        const buttonContainer = document.createElement('div')
+        const article = document.createElement('article')
+        const heading3 = document.createElement('h3')
+        const paragraph = document.createElement('p')
+        const listContainer = document.createElement('ul')
+        const image = document.createElement('img')
+        const liveImg = document.createElement('img')
+        const sourceImg = document.createElement('img')
+        const liveBtn = document.createElement('button')
+        const sourceBtn = document.createElement('button')
+        projectSection.appendChild(modalContainer)
+        modalContainer.classList.add('modal-container')
+        modalContainer.appendChild(article)
+        article.classList.add('modal-content')
+        article.append(header, listContainer, modalFex)
+        header.classList.add('modal-header')
+        header.append(heading3, icon)
+        heading3.innerText = project.title
+        icon.classList.add('fas', 'fa-times')
+        for (let j = 0; j < project.technologies.length; j += 1) {
+          const link = document.createElement('a')
+          const listItem = document.createElement('li')
+          listContainer.appendChild(listItem)
+          listContainer.classList.add('modal-list')
+          listItem.appendChild(link)
+          listItem.classList.add('modal-item')
+          link.innerText = project.technologies[j]
+        }
+        modalFex.classList.add('modal-flex')
+        modalFex.append(image, modalDescription)
+        image.src = project.image
+        modalDescription.classList.add('modal-desc')
+        modalDescription.append(paragraph, buttonContainer)
+        paragraph.innerText = project.description
+        buttonContainer.classList.add('button-container')
+        buttonContainer.append(liveBtn, sourceBtn)
+        liveBtn.classList.add('live', 'base-btn')
+        liveBtn.innerText = 'See live'
+        liveBtn.appendChild(liveImg)
+        liveImg.src = './image/see-live.svg'
+        sourceBtn.classList.add('source', 'base-btn')
+        sourceBtn.innerText = 'See Source'
+        sourceBtn.appendChild(sourceImg)
+        sourceImg.src = './image/GitHub-source.png'
+        const popDisplay = document.querySelector('.modal-container')
+        popDisplay.style.display = 'block'
+        icon.addEventListener('click', () => {
+          projectSection.removeChild(modalContainer)
+        })
+        
+      } 
+    })
+  })
+})
+
+
 function toggleMenu() {
   if (menu.classList.contains('active')) {
-    menu.classList.remove('active');
-    close.style.display = 'none';
-    open.style.display = 'block';
-    logo.style.display = 'block';
-    body.classList.remove('noScroll');
+    menu.classList.remove('active')
+    close.style.display = 'none'
+    open.style.display = 'block'
+    logo.style.display = 'block'
+    body.classList.remove('noScroll')
   } else {
-    menu.classList.add('active');
-    close.style.display = 'block';
-    body.classList.add('noScroll');
-    logo.style.display = 'none';
-    open.style.display = 'none';
+    menu.classList.add('active')
+    close.style.display = 'block'
+    body.classList.add('noScroll')
+    logo.style.display = 'none'
+    open.style.display = 'none'
   }
 }
 
-hamburger.addEventListener('click', toggleMenu);
+hamburger.addEventListener('click', toggleMenu)
 items.forEach((item) => {
-  item.addEventListener('click', toggleMenu);
-});
+  item.addEventListener('click', toggleMenu)
+})
+
+const form = document.getElementsByTagName('form')[0]
+const email = document.querySelector('#email')
+const emailError = document.querySelector('.target')
+email.addEventListener('input', (event) => {
+  console.log('stan')
+  if (email.validity.valid) {
+    emailError.textContent = ''
+    emailError.classList.remove('error')
+  } else {
+    showError()
+  }
+})
+
+form.addEventListener('submit', (event) => {
+  if (!email.validity.valid) {
+    event.preventDefault()
+    showError()
+  }
+})
+
+function showError() {
+  emailError.classList.add('error')
+  if (email.validity.valueMissing) {
+    emailError.textContent = 'You need to fill the email input field'
+  } else if (email.validity.typeMismatch) {
+    emailError.textContent = 'Entered Value needs to be an email address'
+  }
+  emailError.className = 'error show'
+}
