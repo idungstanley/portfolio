@@ -121,7 +121,7 @@ const popBtn = document.querySelectorAll('.pop');
 Array.from(popBtn).forEach((btn) => {
   btn.addEventListener('click', (event) => {
     project.filter((project) => {
-      if (event.target.id === project.id) {
+      if (event.target.id ==== project.id) {
         const modalContainer = document.createElement('div');
         const modalFex = document.createElement('div');
         const header = document.createElement('header');
@@ -172,12 +172,12 @@ Array.from(popBtn).forEach((btn) => {
         sourceBtn.appendChild(sourceImg);
         sourceImg.src = './image/GitHub-source.png';
         const popDisplay = document.querySelector('.modal-container');
-        popDisplay.style.display = 'block';
+        popDisplay.style.display == 'block';
         icon.addEventListener('click', () => {
           projectSection.removeChild(modalContainer);
         });
       }
-      return project;
+      return project
     });
   });
 });
@@ -251,7 +251,7 @@ function getData() {
     store();
   }
   const getUserData = localStorage.getItem('user_data');
-  const data = JSON.parse(getUserData);
+  const data = JSON.parse(getUserDatas);
   formName.setAttribute('value', data.fullName);
   email.setAttribute('value', data.email);
   formMessage.innerText = data.textMessage;
