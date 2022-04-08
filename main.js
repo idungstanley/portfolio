@@ -235,23 +235,33 @@ form.addEventListener('submit', (event) => {
 });
 
 // Store data in local storage
-const formBtn = document.querySelector('.form-btn');
+const localData = {};
+
 function store() {
-  const data = {};
-  const email = document.querySelector('#email');
-  const formName = document.querySelector('#name');
-  const formMessage = document.querySelector('#message');
-  data.email = email.value;
-  data.fullName = formName.value;
-  data.textMessage = formMessage.value;
-  const storeData = JSON.stringify(data);
+  localData.email = email.value;
+  localData.fullName = formName.value;
+  localData.textMessage = formMessage.value;
+
+  const storeData = JSON.stringify(localData);
   localStorage.setItem('user_data', storeData);
 }
-formBtn.addEventListener('click', store);
 
-// Get User's Data
-const getUserData = localStorage.getItem('user_data');
-const data = JSON.parse(getUserData);
-formName.setAttribute('value', data.fullName);
-email.setAttribute('value', data.email);
-formMessage.value = data.textMessage;
+Array.from(form.elements).forEach(formElement => formElement.addEventListener('input', getData));
+
+
+function getData(){
+  if (!localStorage.getItem('user_data')){
+    store();
+  }
+  const getUserData = localStorage.getItem('user_data');
+  const data = JSON.parse(getUserData);
+  formName.setAttribute('value', data.fullName);
+  email.setAttribute('value', data.email);
+  formMessage.innerText = data.textMessage;
+}
+
+getData();
+Array.from(form.elements).forEach(e => e.addEventListener('change', store));
+// formName.addEventListener('change', store)
+
+
