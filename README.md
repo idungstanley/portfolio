@@ -1,3 +1,4 @@
+![](https://img.shields.io/badge/Microverse-blueviolet)
 # portfolio
 
 > I create the nav and headline in my portfolio project, using HTML, CSS(flexbox), Linters.
@@ -40,7 +41,7 @@ To get a local copy up and running follow these simple example steps.
 * Create the Github\workflows Folder
   * Create a Linters.yml file and configure
 * Build and Deploy
- * Portfolio Page: [Click me](https://idungstanley.github.io/portfolio/)
+ * Portfolio Page: [Click me to view the live demo](https://idungstanley.github.io/portfolio/)
 
 ### Install
 
@@ -66,13 +67,15 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 👤 **Sunday Stanley**
-- GitHub: [@githubhandle](https://github.com/idungstanley)
-- Twitter: [@twitterhandle](https://twitter.com/IdungStanley)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/sundaystanley56)
+- GitHub: [@idungstanley](https://github.com/idungstanley)
+- Twitter: [@idungstanley](https://twitter.com/IdungStanley)
+- LinkedIn: [Sunday (idung) Stanley](https://linkedin.com/in/sundaystanley56)
 
 👤 **Andres Garzon**
-- GitHub: [@githubhandle](https://github.com/andgarzonmal)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/andres-garzon-maldonado-951a2a180)
+- GitHub: [@anagudelogu](https://github.com/anagudelogu)
+- Twitter: [@AgudeloAndres__](https://twitter.com/AgudeloAndres__)
+- LinkedIn: [Andres Agudelo Guzman](https://linkedin.com/in/aagst)
+
 
 ## 📝 License
 This project is [test](./test.md) licensed.
