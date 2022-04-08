@@ -236,7 +236,7 @@ form.addEventListener('submit', (event) => {
   }
 });
 
-// Local storage
+// Store data in local storage
 const form_btn = document.querySelector(".form-btn")
 form_btn.addEventListener("click", store)
 function store (){
