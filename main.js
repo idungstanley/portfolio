@@ -69,7 +69,7 @@ const project = [
     'github source': 'dummylink.com',
     'live project': 'dummylink.com',
   },
-]
+];
 
 for (let i = 0; i < project.length; i += 1) {
   const article = document.createElement('article');
@@ -206,10 +206,8 @@ items.forEach((item) => {
 const form = document.getElementsByTagName('form')[0];
 const emailError = document.querySelector('.target');
 const email = document.querySelector('#email');
-const form_name = document.querySelector("#name")
-const form_message = document.querySelector("#message")
-
-
+const formName = document.querySelector('#name');
+const formMessage = document.querySelector('#message');
 
 function showError() {
   if (email.validity.valueMissing) {
@@ -237,23 +235,23 @@ form.addEventListener('submit', (event) => {
 });
 
 // Store data in local storage
-const form_btn = document.querySelector(".form-btn")
-form_btn.addEventListener("click", store)
-function store (){
-  let data = {}
+const formBtn = document.querySelector('.form-btn');
+function store() {
+  const data = {};
   const email = document.querySelector('#email');
-  const form_name = document.querySelector('#name');
-  const form_message = document.querySelector('#message');
-  data.email = email.value
-  data.fullName = form_name.value
-  data.textMessage = form_message.value
-  let storeData = JSON.stringify(data);
-  localStorage.setItem("user_data", storeData);
+  const formName = document.querySelector('#name');
+  const formMessage = document.querySelector('#message');
+  data.email = email.value;
+  data.fullName = formName.value;
+  data.textMessage = formMessage.value;
+  const storeData = JSON.stringify(data);
+  localStorage.setItem('user_data', storeData);
 }
-let getUserData = localStorage.getItem("user_data");
-let data = JSON.parse(getUserData);
-form_name.setAttribute("value", data.fullName);
-email.setAttribute("value", data.email);
-form_message.value = data.textMessage;
+formBtn.addEventListener('click', store);
 
-
+// Get User's Data
+const getUserData = localStorage.getItem('user_data');
+const data = JSON.parse(getUserData);
+formName.setAttribute('value', data.fullName);
+email.setAttribute('value', data.email);
+formMessage.value = data.textMessage;
