@@ -246,11 +246,8 @@ function store() {
   localStorage.setItem('user_data', storeData);
 }
 
-Array.from(form.elements).forEach(formElement => formElement.addEventListener('input', getData));
-
-
-function getData(){
-  if (!localStorage.getItem('user_data')){
+function getData() {
+  if (!localStorage.getItem('user_data')) {
     store();
   }
   const getUserData = localStorage.getItem('user_data');
@@ -259,9 +256,7 @@ function getData(){
   email.setAttribute('value', data.email);
   formMessage.innerText = data.textMessage;
 }
+Array.from(form.elements).forEach((formElement) => formElement.addEventListener('input', getData));
 
 getData();
-Array.from(form.elements).forEach(e => e.addEventListener('change', store));
-// formName.addEventListener('change', store)
-
-
+Array.from(form.elements).forEach((e) => e.addEventListener('change', store));
