@@ -182,19 +182,19 @@ Array.from(popBtn).forEach((btn) => {
   });
 });
 
+
 function toggleMenu() {
   if (menu.classList.contains('active')) {
     menu.classList.remove('active');
     close.style.display = 'none';
-    open.style.display = 'block';
-    logo.style.display = 'block';
+    open.style.display = 'flex';
+    logo.style.display = 'flex';
     body.classList.remove('noScroll');
-  } else {
-    menu.classList.add('active');
-    close.style.display = 'block';
-    body.classList.add('noScroll');
-    logo.style.display = 'none';
-    open.style.display = 'none';
+  }else{
+     menu.classList.add('active')
+     close.style.display = 'block'
+     body.classList.add('noScroll')
+     open.style.display = 'none'
   }
 }
 
