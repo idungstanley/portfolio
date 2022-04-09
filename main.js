@@ -10,7 +10,7 @@ const projectSection = document.querySelector('.work');
 
 const project = [
   {
-    id: 0,
+    id: '0',
     title: 'Profesional Art Printing Data',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
@@ -20,7 +20,7 @@ const project = [
     'live project': 'dummylink.com',
   },
   {
-    id: 1,
+    id: '1',
     title: 'Profesional Art Printing Data',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
@@ -30,7 +30,7 @@ const project = [
     'live project': 'dummylink.com',
   },
   {
-    id: 2,
+    id: '2',
     title: 'Profesional Art Printing Data and my work',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
@@ -40,7 +40,7 @@ const project = [
     'live project': 'dummylink.com',
   },
   {
-    id: 3,
+    id: '3',
     title: 'Profesional Art Printing Data',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
@@ -50,7 +50,7 @@ const project = [
     'live project': 'dummylink.com',
   },
   {
-    id: 4,
+    id: '4',
     title: 'Profesional Art Printing Data',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
@@ -60,10 +60,10 @@ const project = [
     'live project': 'dummylink.com',
   },
   {
-    id: 5,
+    id: '5',
     title: 'Profesional Art Printing Data',
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard and all you want will be given to you",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     technologies: ['Html', 'Bootstrap', 'Ruby'],
     image: './image/Snapshoot-Portfolio.png',
     'github source': 'dummylink.com',
@@ -204,11 +204,12 @@ items.forEach((item) => {
 });
 
 const form = document.getElementsByTagName('form')[0];
-const email = document.querySelector('#email');
 const emailError = document.querySelector('.target');
+const email = document.querySelector('#email');
+const formName = document.querySelector('#name');
+const formMessage = document.querySelector('#message');
 
 function showError() {
-  emailError.classList.add('error');
   if (email.validity.valueMissing) {
     emailError.textContent = 'You need to fill the email input field';
   } else if (email.validity.typeMismatch) {
@@ -232,3 +233,30 @@ form.addEventListener('submit', (event) => {
     showError();
   }
 });
+
+// Store data in local storage
+const localData = {};
+
+function store() {
+  localData.email = email.value;
+  localData.fullName = formName.value;
+  localData.textMessage = formMessage.value;
+
+  const storeData = JSON.stringify(localData);
+  localStorage.setItem('user_data', storeData);
+}
+
+function getData() {
+  if (!localStorage.getItem('user_data')) {
+    store();
+  }
+  const getUserData = localStorage.getItem('user_data');
+  const data = JSON.parse(getUserData);
+  formName.setAttribute('value', data.fullName);
+  email.setAttribute('value', data.email);
+  formMessage.innerText = data.textMessage;
+}
+Array.from(form.elements).forEach((formElement) => formElement.addEventListener('input', getData));
+
+getData();
+Array.from(form.elements).forEach((e) => e.addEventListener('change', store));
