@@ -1067,6 +1067,21 @@ input:focus:invalid {
     border: 1px solid #ff6b00;
   }
 
+  .fa-whatsapp:hover{
+    color: #25D366;
+  }
+
+  .zoom-out:hover{
+cursor: pointer;
+animation: zoom;
+animation-duration: 1.5s;
+  }
+  @keyframes zoom {
+     25% {
+      transform: scale(2);
+    }
+  }
+
   .cd:hover {
     cursor: pointer;
     animation-name: cards;
