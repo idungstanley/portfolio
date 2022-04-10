@@ -749,7 +749,7 @@ hr {
   top: 0;
   width: 100%;
   height: 100vh;
-  overflow: hidden;
+  overflow-y: scroll;
   background-color: rgba(255, 255, 255, 0.932);
   background-blend-mode: soft-light;
 }
@@ -1067,17 +1067,17 @@ input:focus:invalid {
     border: 1px solid #ff6b00;
   }
 
-  .fa-whatsapp:hover{
-    color: #25D366;
+  .fa-whatsapp:hover {
+    color: #25d366;
   }
 
-  .zoom-out:hover{
-cursor: pointer;
-animation: zoom;
-animation-duration: 1.5s;
+  .zoom-out:hover {
+    cursor: pointer;
+    animation: zoom;
+    animation-duration: 1.5s;
   }
   @keyframes zoom {
-     25% {
+    25% {
       transform: scale(2);
     }
   }
@@ -1276,7 +1276,7 @@ animation-duration: 1.5s;
     top: 0;
     width: 100%;
     height: 100%;
-    overflow-y:scroll;
+    overflow-y: scroll;
     background-color: #979493;
     background-blend-mode: soft-light;
   }
@@ -1346,14 +1346,19 @@ animation-duration: 1.5s;
   .live {
     padding: 5px;
     height: auto;
+  }
+
+  .live > a {
     font-family: Inter, sans-serif;
     font-size: 17px;
     font-weight: 700;
+    color: #fff;
     line-height: 24px;
     letter-spacing: 0.03em;
     text-align: center;
+    text-decoration: none;
   }
-
+  
   .source {
     font-family: Inter, sans-serif;
     font-size: 17px;
@@ -1364,4 +1369,14 @@ animation-duration: 1.5s;
     padding: 5px;
     height: auto;
   }
+    .source > a {
+      font-family: Inter, sans-serif;
+      font-size: 17px;
+      font-weight: 700;
+      color: #fff;
+      line-height: 24px;
+      letter-spacing: 0.03em;
+      text-align: center;
+      text-decoration: none;
+    }
 }
