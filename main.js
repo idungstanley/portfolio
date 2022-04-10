@@ -180,8 +180,8 @@ Array.from(popBtn).forEach((btn) => {
         sourceBtn.appendChild(sourceImg);
         sourceImg.src = './image/GitHub-source.png';
         const popDisplay = document.querySelector('.modal-container');
-        popDisplay.style.display = 'block';
         body.classList.add('noScroll')
+        popDisplay.style.display = 'block';
         icon.addEventListener('click', () => {
           projectSection.removeChild(modalContainer);
         });

@@ -1178,7 +1178,7 @@ input:focus:invalid {
 
   .card-container article:nth-child(odd) {
     margin-top: 20px;
-    background-image: url(./image/card-1.png);
+    background-image: url(./image/card-3.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
