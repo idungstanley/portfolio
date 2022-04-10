@@ -21,13 +21,13 @@ const project = [
   },
   {
     id: '1',
-    title: 'Profesional Art Printing Data',
+    title: 'Music Player Application',
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    technologies: ['Html', 'Bootstrap', 'Ruby'],
-    image: './image/Snapshoot-Portfolio.png',
-    'github source': 'dummylink.com',
-    'live project': 'dummylink.com',
+      'A music player with simple minimalistic and elegant interface. The player consist of 1 screens:3 tracks',
+    technologies: ['Html', 'CSS', 'JavaScript'],
+    image: './image/music_player.png',
+    'github source': 'https://github.com/idungstanley/music_player',
+    'live project': ' https://idungstanley.github.io/music_player/',
   },
   {
     id: '2',
@@ -69,7 +69,7 @@ const project = [
     'github source': 'dummylink.com',
     'live project': 'dummylink.com',
   },
-];
+]
 
 for (let i = 0; i < project.length; i += 1) {
   const article = document.createElement('article');
@@ -137,6 +137,8 @@ Array.from(popBtn).forEach((btn) => {
         const sourceImg = document.createElement('img');
         const liveBtn = document.createElement('button');
         const sourceBtn = document.createElement('button');
+        const liveLink = document.createElement("a")
+        const sourceLink = document.createElement("a")
         projectSection.appendChild(modalContainer);
         modalContainer.classList.add('modal-container');
         modalContainer.appendChild(article);
@@ -164,11 +166,17 @@ Array.from(popBtn).forEach((btn) => {
         buttonContainer.classList.add('button-container');
         buttonContainer.append(liveBtn, sourceBtn);
         liveBtn.classList.add('live', 'base-btn');
-        liveBtn.innerText = 'See live';
+        liveBtn.appendChild(liveLink);
+        liveLink.innerText = 'See live';
+        liveLink.href = project['live project']
+        liveLink.target = "_blank"
         liveBtn.appendChild(liveImg);
         liveImg.src = './image/see-live.svg';
         sourceBtn.classList.add('source', 'base-btn');
-        sourceBtn.innerText = 'See Source';
+        sourceBtn.appendChild(sourceLink)
+        sourceLink.innerText = 'See Source';
+        sourceLink.href = project['github source']
+        sourceLink.target = '_blank'
         sourceBtn.appendChild(sourceImg);
         sourceImg.src = './image/GitHub-source.png';
         const popDisplay = document.querySelector('.modal-container');
