@@ -181,6 +181,7 @@ Array.from(popBtn).forEach((btn) => {
         sourceImg.src = './image/GitHub-source.png';
         const popDisplay = document.querySelector('.modal-container');
         popDisplay.style.display = 'block';
+        body.classList.add('noScroll')
         icon.addEventListener('click', () => {
           projectSection.removeChild(modalContainer);
         });
