@@ -864,6 +864,43 @@ input:focus:invalid {
   text-align: left;
 }
 
+.live {
+    padding: 5px;
+    height: auto;
+  }
+
+  .live > a {
+    font-family: Inter, sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .source {
+    font-family: Inter, sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    padding: 5px;
+    height: auto;
+  }
+    .source > a {
+      font-family: Inter, sans-serif;
+      font-size: 17px;
+      font-weight: 700;
+      color: #fff;
+      line-height: 24px;
+      letter-spacing: 0.03em;
+      text-align: center;
+      text-decoration: none;
+    }
+
 @media screen and (min-width: 768px) {
   * {
     padding: 0;
