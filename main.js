@@ -31,13 +31,13 @@ const project = [
   },
   {
     id: '2',
-    title: 'Profesional Art Printing Data and my work',
+    title: 'Awesome Book Library',
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    technologies: ['Html', 'Bootstrap', 'Ruby'],
-    image: './image/Snapshoot-Portfolio.png',
-    'github source': 'dummylink.com',
-    'live project': 'dummylink.com',
+      'I build an awesome book library using HTML, CSS(flexbox), Javascript, keep good practice with thee Linters correction. I add the headline to the project which stands as the book title.',
+    technologies: ['Html', 'Bootstrap', 'Javascript'],
+    image: './image/screenshot.png',
+    'github source': 'https://github.com/idungstanley/awesomebooks_es6',
+    'live project': 'https://idungstanley.github.io/awesomebooks_es6/',
   },
   {
     id: '3',

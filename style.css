@@ -601,8 +601,8 @@ hr {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
+  font-size: 18px;
+  line-height: 24px;
   text-align: center;
 }
 
@@ -755,6 +755,7 @@ hr {
 }
 
 .modal-content {
+  border-radius: 0.5rem;
   padding: 2%;
   background-color: #fff;
 }
@@ -865,41 +866,41 @@ input:focus:invalid {
 }
 
 .live {
-    padding: 5px;
-    height: auto;
-  }
+  padding: 5px;
+  height: auto;
+}
 
-  .live > a {
-    font-family: Inter, sans-serif;
-    font-size: 17px;
-    font-weight: 700;
-    color: #fff;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    text-align: center;
-    text-decoration: none;
-  }
-  
-  .source {
-    font-family: Inter, sans-serif;
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    text-align: center;
-    padding: 5px;
-    height: auto;
-  }
-    .source > a {
-      font-family: Inter, sans-serif;
-      font-size: 17px;
-      font-weight: 700;
-      color: #fff;
-      line-height: 24px;
-      letter-spacing: 0.03em;
-      text-align: center;
-      text-decoration: none;
-    }
+.live > a {
+  font-family: Inter, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.source {
+  font-family: Inter, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  padding: 5px;
+  height: auto;
+}
+.source > a {
+  font-family: Inter, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-decoration: none;
+}
 
 @media screen and (min-width: 768px) {
   * {
@@ -1127,12 +1128,12 @@ input:focus:invalid {
 
   @keyframes cards {
     25% {
-      transform: scale(0.7);
+      transform: scale(0.8);
     }
 
-    100% {
+    /* 100% {
       transform: scale(1);
-    }
+    } */
   }
 
   .card-container {
@@ -1304,7 +1305,6 @@ input:focus:invalid {
   }
 
   .modal-container {
-    display: none;
     position: fixed;
     z-index: 1000;
     left: 0;
@@ -1316,10 +1316,12 @@ input:focus:invalid {
     overflow-y: scroll;
     background-color: #979493;
     background-blend-mode: soft-light;
+    display: none;
   }
 
   .modal-content {
     padding: 1.5%;
+    border-radius: 1rem;
     background-color: #fff;
   }
 
@@ -1350,7 +1352,7 @@ input:focus:invalid {
   }
 
   .modal-flex > img {
-    width: auto;
+    width: 50%;
     flex-grow: 0.6;
   }
 
@@ -1395,7 +1397,7 @@ input:focus:invalid {
     text-align: center;
     text-decoration: none;
   }
-  
+
   .source {
     font-family: Inter, sans-serif;
     font-size: 17px;
@@ -1406,14 +1408,14 @@ input:focus:invalid {
     padding: 5px;
     height: auto;
   }
-    .source > a {
-      font-family: Inter, sans-serif;
-      font-size: 17px;
-      font-weight: 700;
-      color: #fff;
-      line-height: 24px;
-      letter-spacing: 0.03em;
-      text-align: center;
-      text-decoration: none;
-    }
+  .source > a {
+    font-family: Inter, sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-decoration: none;
+  }
 }
