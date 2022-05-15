@@ -61,13 +61,13 @@ const project = [
   },
   {
     id: '5',
-    title: 'Profesional Art Printing Data',
+    title: 'Service Camp',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-    technologies: ['Html', 'Bootstrap', 'Ruby'],
-    image: './image/Snapshoot-Portfolio.png',
-    'github source': 'dummylink.com',
-    'live project': 'dummylink.com',
+      'Future project, this app will in time reduce the cost of purchase a product, user can connect with producers directly. User can order, user can update and interact with producer.',
+    technologies: ['Html', 'javascript', 'Sass'],
+    image: './image/s-camp.png',
+    'github source': 'https://github.com/idungstanley/service_camp_capstone',
+    'live project': 'https://idungstanley.github.io/service_camp_capstone/',
   },
 ]
 
