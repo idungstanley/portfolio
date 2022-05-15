@@ -51,13 +51,13 @@ const project = [
   },
   {
     id: '4',
-    title: 'Advance Todo List',
+    title: 'Leaderboard Game',
     description:
-      "This is a todo app where you can add a todo, select and filter all the completed todo's, you add edit the todo and it updates automatically and saved in the local storage",
-    technologies: ['Html', 'Bootstrap', 'Javascript', 'Webpack'],
-    image: './image/todo.png',
-    'github source': 'https://github.com/idungstanley/Advance_todo',
-    'live project': 'https://idungstanley.github.io/Advance_todo/dist/',
+      'The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.',
+    technologies: ['Html', 'CSS', 'Javascript', 'Webpack', 'API'],
+    image: './image/leader-image.jpeg',
+    'github source': 'https://github.com/idungstanley/LeaderBoard',
+    'live project': 'https://idungstanley.github.io/LeaderBoard/dist/',
   },
   {
     id: '5',
