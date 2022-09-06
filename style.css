@@ -90,6 +90,7 @@ nav {
 }
 
 .bio-container {
+  margin-top: 90px;
   display: flex;
   padding: 15vh 10px 30vh 40px;
   background-color: #1c1a19;
@@ -1020,6 +1021,7 @@ input:focus:invalid {
 
   .bio-container {
     display: grid;
+    margin-top: 20px;
     padding: 15vh 10px 30vh 40px;
     grid-template-columns: 0.3fr 1fr 2fr;
     background-color: #1c1a19;
